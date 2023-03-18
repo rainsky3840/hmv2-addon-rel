@@ -1,0 +1,424 @@
+﻿
+//아이템 등록
+ADD_LIST,true
+Sell_EMERALD,30
+Sell_IRONINGOT,30
+Sell_REDSTONE,30
+USname,KF-21 Boramae
+JPname,KF-21 Boramae
+
+//자연스폰 여부
+vacanspawn,false
+//스폰 확률
+spawn_rare,0
+
+
+//아이템 내부 이름 등록
+Vehicle,modern_kr_kf21
+
+
+
+
+
+//모델
+ObjModel,modern_kr_kf21.mqo
+
+//모델 텍스쳐
+ObjTexture,tex_modern_kr_kf21.png
+
+
+//포탑이 플레이어를 따라가는지
+ridding_roteplayer,false
+
+//최대 탑승인원
+riddng_maximum,1
+
+//탑승 위치, 탑승인원 추가
+riddingx,0.00D
+riddingy,2.05D
+riddingz,1.15D
+
+//ridding_roteplayer,true시 움직이는 양, 포탑이 중앙에 위치하지 않고 포탑의 중심 위치가 없을 때 사용
+riddingx_roteplayer,0.0D
+riddingy_roteplayer,0.0D
+riddingz_roteplayer,0.0D
+
+//1인칭 시점 위치
+ridding_view1_x,0.0F
+ridding_view1_y,0.0F
+ridding_view1_z,0.0F
+
+//3인칭 시점 위치
+ridding_view_x,0.0F
+ridding_view_y,-4.0F
+ridding_view_z,-20.0F
+
+//확대 배율
+ridding_zoom,2.0F
+
+//true시 탑승자 투명화
+ridding_invisible,false
+
+//HUD를 전체화면에 표시
+renderhud,true
+//상위 이미지
+hud_icon,heli.png
+
+//진행 방향 표시
+render_hud_icon_hori,true
+//상위 이미지
+hud_icon_hori,heli_hori.png
+
+//좌상단 레이더 표시
+render_rader,true
+
+//대공레이더
+aarader,false
+
+
+//탈것 종류
+//0 = 전차
+//1 = 항공기
+//2 = 헬기
+//3 = 자주포
+//5 = 보트
+vehicletype,1
+
+// 이동 시 소리
+movesound,handmadevehicle2.sound_jet1
+
+// 이동시 원목 등의 블록을 파괴할지 어떨지
+roodbreak,false
+
+//HP
+hp,160
+
+// 가로 크기 (정사각형)
+width,5.0F
+
+// 세로 크기
+height,3.5F
+
+//true 때 타고 있는 몹에 데미지가 통과하도록
+riddng_opentop,false
+
+
+
+// 장갑, 이 값 이하의 데미지이면 데미지를 무효화
+// 정면, 측면, 후면, 상판, 바닥판
+damage_angle,0,0,0,0,0
+
+// (전차와 같은) 포탑이 있습니까?
+can_turret,false
+
+// 값 이상의 높이로 포탑 판정
+turret_height,2.0F
+
+// 포탑 정면, 포탑 측면, 포탑 후면
+damage_turret_angle,0,0,0
+
+
+// 방탄성
+// 총탄, 기관포탄, 유탄, 철갑탄
+antibullet,0.5F,0.5F,2.0F,1.5F
+
+// 타고 있는 몹에 대한 데미지 감소율
+ridding_damege,1.0F
+
+
+
+// 이동 속도
+speed,0.045F
+
+// 스위블 속도
+turnspeed,2.2F
+
+// 넘어지는 단차의 높이
+stepHeight,1.5F
+
+// 최대 스로틀
+trottlemax,20F
+
+// 최소 스로틀
+trottlemin,-2F
+
+// 스로틀 + 가속도
+trottleaccelerationmax,0.2F
+
+// 스로틀 - 가속도
+trottleaccelerationmin,-0.15F
+
+
+// 최대 앙각
+angle_max,-90F
+
+// 최대 부각
+angle_min,90F
+
+//true 시 횡방향을 향하는 각도 제한
+ridding_rotation_lock,false
+
+// 가로로 향하는 각도
+angle_yaw_max,90F
+
+
+// 타고 있는 몹의 최소 감지 범위
+mob_min_range,20
+
+// 타고 있는 몹의 최대 감지 범위
+mob_max_range,60
+
+// 타고 있는 몹의 상하 방향의 감지 범위
+mob_min_height,20
+
+
+
+
+// 항공기에서 지상에서의 각도
+model_angle_base_x,0.0F
+model_angle_base_y,0.0F
+model_angle_base_z,0.0F
+
+// 지상시 모델 위치 수정 값
+model_angle_offset_x,0.0F
+model_angle_offset_y,0.0F
+model_angle_offset_z,0.0F
+
+// 지상시 각도
+model_angle_x,0.0F
+model_angle_y,0.0F
+model_angle_z,0.0F
+
+
+
+
+
+// 포탑(mat4의 수)
+turret,0
+
+// 포탑이 돌아가는지 여부
+turretrote,true
+
+//mat4 위치
+arm_x,0.0F
+arm_y,0.0F
+arm_z,0.0F
+
+//mat5 위치
+hand_x,0.0F
+hand_y,0.0F
+hand_z,0.0F
+
+//mat6의 거동
+finger_type,1
+
+// 프로펠러, 타이어 수
+pera,0
+
+// 프로펠러의 회전 중심
+pera_x,0.0F
+pera_y,2.12F
+pera_z,0.0F
+
+// 프로펠러의 회전 방향
+perarote_x,0F
+perarote_y,0F
+perarote_z,1F
+
+
+// 연기 입자 수
+cloud,2
+// 연기 입자의 위치
+cloud_x,0.72D,-0.72D
+cloud_y,2.36D,2.36D
+cloud_z,-11.8D,-11.8D
+
+
+// 엔진 배기
+exhaust,2
+
+// 애프터버너가 나오는지 여부
+exhaust_ab,true
+
+// 엔진 배기 위치
+exhaust_x,0.72F,-0.72F
+exhaust_y,2.36F,2.36F
+exhaust_z,-11.8D,-11.8D
+
+
+// 레이저 사이트 수
+laser_sight,0
+
+//레이저 사이트가 플레이어 방향을 따라갈지 여부
+rote_laser_sight,true
+
+// 레이저 사이트 위치
+laser_sight_x,0.0F
+laser_sight_y,0.0F
+laser_sight_z,0.0F
+
+//0은 무장 1, 1은 무장 2, 2는 무장 3 표시
+laser_sight_weapon,0
+
+
+weapon1true,true
+weapon1key,0
+w1name,20mmM61A2
+ammo1,1
+magazine1,25
+reload_time1,60
+reloadsoundset1,20
+reloadsound1,handmadevehicle2.reload_mg
+w1cycle,1
+w1barst,1
+w1can_cooldown,true
+w1crossfire,false
+weapon1,1
+bullet_type1,0,0
+bullet_model1,bullet_huge.mqo
+bullet_tex1,bullet_huge.png
+fire_model1,msmoke.mqo
+fire_tex1,msmoke.png
+fire_time1,2
+sound_fire1,handmadevehicle2.fire_cannon2
+fire_pointx1,1.47F
+fire_pointy1,2.66F
+fire_pointz1,-1.11F
+basis_pointx1,1.47F
+basis_pointy1,2.66F
+basis_pointz1,-1.11F
+fire_yoffset1,-0.01D
+rotationfollowing1,true
+rotation_player1,true
+rotation_firepointbxbz1,false
+rotation_lock_pitch_vehicle1,false
+bullet_damage1,12
+bullet_speed1,5F
+bullet_bure1,1F
+bullet_expower1,1F
+bullet_ex1,true
+bullet_kazu1,1
+bullet_gravity1,0.029D
+bullet_livingtime1,80
+
+
+weapon2true,true
+weapon2key,2
+w2name,MBDA_Meteor
+w2missile_aam,true
+ammo2,8
+magazine2,4
+reload_time2,100
+reloadsoundset2,20
+reloadsound2,handmadevehicle2.reload_cannon
+w2cycle,1
+w2barst,1
+w2crossfire,true
+weapon2,1
+bullet_type2,4
+bullet_model2,bullet_aam.mqo
+bullet_tex2,bullet_aam.png
+fire_model2,msmoke.mqo
+fire_tex2,msmoke.png
+fire_time2,16
+sound_fire2,handmadevehicle2.fire_rocket
+fire_pointx2,0.48F
+fire_pointy2,1.28F
+fire_pointz2,-5.35F
+basis_pointx2,0.48F
+basis_pointy2,1.28F
+basis_pointz2,-5.35F
+fire_yoffset2,-0.01D
+rotationfollowing2,false
+rotation_player2,false
+//砲塔が中心にないものに使用
+rotation_firepointbxbz2,true
+bullet_damage2,45
+bullet_speed2,3.5F
+bullet_bure2,1.5F
+bullet_expower2,2F
+bullet_ex2,false
+bullet_kazu2,1
+bullet_gravity2,0.029D
+bullet_livingtime2,80
+
+
+weapon3true,true
+weapon3key,2
+w3name,IRIS-T
+w3missile_aam,true
+ammo3,4
+magazine3,2
+reload_time3,80
+reloadsoundset3,20
+reloadsound3,handmadevehicle2.reload_cannon
+w3cycle,1
+w3barst,1
+w3crossfire,true
+weapon3,1
+bullet_type3,4
+bullet_model3,bullet_aam.mqo
+bullet_tex3,bullet_aam.png
+fire_model3,msmoke.mqo
+fire_tex3,msmoke.png
+fire_time3,16
+sound_fire3,handmadevehicle2.fire_rocket
+fire_pointx3,5.17F
+fire_pointy3,1.74F
+fire_pointz3,-6.56F
+basis_pointx3,0.0F
+basis_pointy3,1.74F
+basis_pointz3,-6.56F
+fire_yoffset3,-0.01D
+rotationfollowing3,false
+rotation_player3,false
+//砲塔が中心にないものに使用
+rotation_firepointbxbz3,true
+bullet_damage3,40
+bullet_speed3,3.2F
+bullet_bure3,1.5F
+bullet_expower3,2F
+bullet_ex3,false
+bullet_kazu3,1
+bullet_gravity3,0.029D
+bullet_livingtime3,80
+
+
+weapon4true,true
+weapon4key,0
+w4name,Flare
+ammo4,4
+magazine4,2
+reload_time4,80
+reloadsoundset4,20
+reloadsound4,handmadevehicle2.reload_cannon
+w4cycle,1
+w4barst,1
+w4crossfire,true
+weapon4,1
+bullet_type4,21
+bullet_model4,bullet_aam.mqo
+bullet_tex4,bullet_aam.png
+fire_model4,msmoke.mqo
+fire_tex4,msmoke.png
+fire_time4,16
+sound_fire4,handmadevehicle2.fire_rocket
+fire_pointx4,0F
+fire_pointy4,0F
+fire_pointz4,0F
+basis_pointx4,0F
+basis_pointy4,0F
+basis_pointz4,0F
+fire_yoffset4,0D
+rotationfollowing4,false
+rotation_player4,false
+//砲塔が中心にないものに使用
+rotation_firepointbxbz4,true
+bullet_damage4,0
+bullet_speed4,1.0F
+bullet_bure4,1.0F
+bullet_expower4,0F
+bullet_ex4,false
+bullet_kazu4,1
+bullet_gravity4,0.029D
+bullet_livingtime4,80

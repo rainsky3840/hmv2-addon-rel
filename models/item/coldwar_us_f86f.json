@@ -1,0 +1,6 @@
+{
+"parent": "item/generated",
+"textures": {
+"layer0": "handmadevehicle2:items/coldwar_us_f86f"
+}
+}
